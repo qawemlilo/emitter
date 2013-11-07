@@ -34,6 +34,10 @@ Car = Emitter.extend({
     },
     
     stop: function () {
+        if (!this.moving && !this.breaks) {
+            return self;    
+        }
+        
         clearInterval(this.breaks);
         this.moving = false;
         this.emit('stop');
@@ -44,11 +48,11 @@ Car = Emitter.extend({
 
 
 TrafficLights = Emitter.extend({
-    color: 'green',
+    color: '',
     
     colors: ['green', 'amber', 'red'],
     
-    current: -1,
+    current: 0,
     
     power: null,
     
@@ -75,6 +79,9 @@ TrafficLights = Emitter.extend({
             self.emit('change', self.color);
         }, self.interval);
         
+        self.color = self.colors[self.current];
+        self.emit('change', self.color);
+        
         return self;        
     },
     
@@ -93,11 +100,13 @@ TrafficLights = Emitter.extend({
 var myCar = new Car();
 var lights = new TrafficLights();
 
-// move the car
-myCar.move();
-
-// turn traffic lights on
-lights.turnOn();
+// We need to know when the car starts and stops
+myCar.on('start', function () {
+    console.log('Car started. Milieage: ' + parseFloat(this.mileage / 100) + 'km \n');
+})
+.on('stop', function () {
+    console.log('Car stopped. Milieage: ' + parseFloat(this.mileage / 100) + 'km \n');
+});
 
 // the car needs to keep an eye on the traffic lights
 myCar.listenTo(lights, 'change', function (color) {
@@ -114,13 +123,7 @@ myCar.listenTo(lights, 'change', function (color) {
     }
 });
 
-
-myCar.on('start', function () {
-    console.log('Car started \n');
-})
-.on('stop', function () {
-    console.log('Car stopped');
-    console.log('Milieage so far: ' + parseFloat(this.mileage / 100) + 'km \n');
-});
+// turn on the traffic lights
+lights.turnOn();
 
 
