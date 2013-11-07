@@ -1,6 +1,6 @@
 "use strict";
 
-var Emitter = require('./dest/emitter.min'), Car, TrafficLights;
+var Emitter = require('./lib/emitter'), Car, TrafficLights;
 
 
 Car = Emitter.extend({
