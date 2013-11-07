@@ -1,0 +1,28 @@
+{
+  "name": "emitter",
+  "version": "0.1.0",
+  "description": "An event emitter forked from Backbone.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qawemlilo/emitter.git"
+  },
+  "keywords": [
+    "Eventemitter",
+    "object",
+    "events"
+  ],
+  "author": "Qawelesizwe Mlilo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qawemlilo/emitter/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-jshint": "~0.7.1"
+  }
+}
