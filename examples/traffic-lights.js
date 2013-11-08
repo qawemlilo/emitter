@@ -35,7 +35,7 @@ Car = Emitter.extend({
     
     stop: function () {
         if (!this.moving && !this.breaks) {
-            return self;    
+            return this;    
         }
         
         clearInterval(this.breaks);

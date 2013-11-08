@@ -24,7 +24,8 @@ module.exports = function(grunt) {
             all: [
                 'Gruntfile.js',
                 'index.js',
-                'lib/*.js'
+                'lib/*.js',
+                'examples/*.js'
             ]
         }
     });
