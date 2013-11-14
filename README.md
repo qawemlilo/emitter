@@ -1,4 +1,10 @@
 # Emitter
+# Emitter
+
+When you use a programming overtime, you start to notice certain patterns that keep recurring. I write a lot of JavaScript and for me JavaScript events have really resonated with me.
+
+A bit of history
+When I started using JavaScript about 6 years ago, I used events mainly for interacting with DOM objects. Some my most used DOM event handlers were: `onLoad`, `onClick`, `onFocus`, `onBlur`, `onMouseOver`, `onMouseOut`, `onSubmit`. JavaScript was merely a means to an end, it didn't have any sex appeal.
 
 When you use a programming language for some time, overtime, you start to notice certain patterns that keep re-occuring. If you are curious enough you will deeper and try to make sense of everything.
 
