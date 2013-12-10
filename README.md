@@ -37,7 +37,7 @@ var myDog = {
     likes: ['bones', 'biskuits'],
     ate: [],
     feed: function (food) {
-        this.ate(food)
+        this.ate.push(food)
     }               
 };
 
