@@ -6,7 +6,7 @@ Using JavaScript events to interact with DOM objects defined Web 2.0 and is stil
 
 A more powerful implementation of JavaScript Events is in Event Emitters. Most of the popular JavaScript libraries/frameworks have their own implementation of Event Emitters.  
 
-My framework of choice is backbone.js and it uses Backbone.Events to implement Event Emitters.  
+My framework of choice is Backbone.js and it uses Backbone.Events to implement Event Emitters.  
 ```javascript
 var mySimpleObject = {
     name: "John",
