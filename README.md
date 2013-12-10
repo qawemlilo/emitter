@@ -54,7 +54,7 @@ myDog.emit('hungry');
     
 Using Event Emitters has many advantages; you can emit events when an object's state changes, objects can eavesdrop on other objects, reduces callback nesting, e.t.c.
 
-The more I use event emitters the more I feel that they should become part of a future version of JavaScript 
+The more I use event emitters, the more I feel that they should become part of a future version of JavaScript. 
 
 ### My proposed API
 Creating an Event Emitter would have the same API as creating Objects in ES5.
@@ -83,7 +83,7 @@ Emitter uses the same API as [Backbone.Events](http://backbonejs.org/#Events). T
 "use strict";
 
 // in Node require the module
-var Emitter = require('emitter');
+var Emitter = require('emiter');
 
 // In the browser include the script in your html 
 // <script src="dest/emitter.min.js"></script>
@@ -110,7 +110,7 @@ myPet.on('buck', function () {
 });
 
 intruder.on('run', function () {
-    console.log('The intruder is rinning away');
+    console.log('The intruder is running away');
 });
 
 
