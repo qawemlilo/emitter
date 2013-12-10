@@ -57,7 +57,7 @@ Using Event Emitters has many advantages; you can emit events when an object's s
 The more I use event emitters the more I feel that they should become part of a future version of JavaScript 
 
 ### My proposed API
-Creating an Event Emitter would have the same API as creating objects in ES5.
+Creating an Event Emitter would have the same API as creating Objects in ES5.
 
 ```javascript
 // an empty
@@ -77,7 +77,7 @@ var emitter2 = EventEmitter.create(mySimpleObject);
 
 Since native Event Emitters are just but a wishlist for now, I have forked Backbone Events and created a small library called Emitter. You can drop it into your project to start messing with Event Emitters.
 
-Emitter uses the same API as [Backbone.Events](http://backbonejs.org/#Events). The only different is that I have renamed the `trigger` method to `emit`. Below is an example of how to use Emitter.
+Emitter uses the same API as [Backbone.Events](http://backbonejs.org/#Events). The only difference is that I have renamed the `trigger` method to `emit`. Below is an example of how to use Emitter.
  
 ```javascript
 "use strict";
