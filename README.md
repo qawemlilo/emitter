@@ -57,7 +57,7 @@ Using Event Emitters has many advantages; you can emit events when an object's s
 The more I use event emitters the more I feel that they should become part of a future version of JavaScript 
 
 ### My proposed API
-An Event Emitter would have the same API as Object in ES5.
+Creating an Event Emitter would have the same API as creating objects in ES5.
 
 ```javascript
 // an empty
