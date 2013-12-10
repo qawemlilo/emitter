@@ -119,6 +119,11 @@ intruder.listenTo(myPet, 'buck', intruder.run);
 myPet.buck();
 ```
 
+### Installation
+```
+npm install emiter
+```
+
 ### Examples
 ```
 npm run-script example1
