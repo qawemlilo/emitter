@@ -1,17 +1,19 @@
 {
-  "name": "emitter",
+  "name": "emiter",
   "version": "0.1.0",
-  "description": "An event emitter forked from Backbone.js",
+  "description": "An Event Emitter forked from Backbone.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test",
+    "example1": "node examples/traffic-lights.js",
+    "example2": "node examples/intruder.js"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/qawemlilo/emitter.git"
   },
   "keywords": [
-    "Eventemitter",
+    "EventEmitter",
     "object",
     "events"
   ],
